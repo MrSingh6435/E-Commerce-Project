@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+/* Header Section */
+header#mobile{
+    display: none;
+}
+
+#navBar {
+    height: 3.75rem;
+    background: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navLogo {
+    height: 3.1rem;
+    width: 6.25rem;
+}
+
+/* box 1 of Navigaton bar */
+#navLogo .logo {
+    /* background-image: url(../img/amazon_logo.png); */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/* box 2 of Navigaton bar */
+#navAddress {
+    height: 3.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#navAddress .mutedText {
+    color: #cccccc;
+    font: .85rem;
+    margin-left: .93rem;
+}
+
+#navAddress .addressIcon {
+    display: flex;
+    color: #ffffff;
+}
+
+#navAddress .addressIcon p {
+    font: 1rem;
+    margin-left: .18px;
+}
+
+/* box 3 of Navigaton bar */
+#navSearch {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 3px solid transparent;
+}
+
+#navSearch:hover {
+    border: 3px solid orange;
+}
+
+.searchSelect {
+    background: #f3f3f3;
+    width: 3.1rem;
+    text-align: center;
+    border: none;
+}
+
+.searchInput {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+#searchIcon {
+    width: 3.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: #febd65;
+    color: #0f1111;
+}
+
+/* box 4, 5 of Navigaton bar */
+#navSign-in,
+#navReturns {
+    height: 3.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span.muted {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.navPara {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* box 6 of Navigaton bar */
+i.nav-icons {
+    font-size: 2rem;
+    margin-left: .2rem;
+}
+
+#navCart {
+    height: 3.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+/* Header pannel */
+#pannel {
+    height: 2.5rem;
+    background: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#pannelOps {
+    display: flex;
+    width: 70%;
+    font-size: 0.85rem;
+    gap: 10px;
+}
+
+#pannelOps li {
+    list-style: none;
+}
+
+#pannelOps li a {
+    color: white;
+    text-decoration: none;
+}
+
+#pannelDeals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Home Section */
+#home {
+    background: url(../img/hero_image.jpg);
+    background-size: cover;
+    height: 18.7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+#home .slideLeft,
+#home .slideRight {
+    position: absolute;
+    background: transparent;
+    height: 80%;
+    width: 8%;
+    top: 0;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.733);
+    filter: drop-shadow(1px 1px 2px black);
+    transition: .2s;
+}
+
+#home .slideLeft:hover,
+#home .slideRight:hover {
+    color: white;
+    transition: .2s;
+}
+
+#home .slideLeft {
+    left: 0;
+}
+
+#home .slideRight {
+    right: 0;
+}
+
+#home .homeMsg {
+    background: white;
+    color: black;
+    height: 2.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 98%;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Shope Section */
+/* #shopSection {
+} */
+
+#shopSection .slider{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #e2e7e6;
+    padding-bottom: 1rem;
+}
+
+.box {
+    margin-top: 1rem;
+    height: 25rem;
+    width: 23.5%;
+    background: white;
+    padding: 1.25rem 0 .93rem;
+    border-radius: 10px;
+}
+
+.boxContent {
+    margin: 0 1rem;
+    height: 100%;
+}
+
+.boxImg {
+    height: 80%;
+    background-size: cover;
+    margin: 1rem 0;
+}
+
+.boxContent p {
+    color: #007185;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer#mobile{
+    display: none;
+}
+
+.foot-pannel1 {
+    background: #37475a;
+    color: white;
+    height: 3.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.foot-pannel1:hover .fa-caret-up{
+    top: 0.4rem;
+    transition: .2s;
+}
+
+.foot-pannel1 i{
+    position: absolute;
+    top: 0.5rem;
+    transition: .2s;
+}
+
+.foot-pannel2 {
+    background: #222f3df3;
+    min-height: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.foot-pannel2 ul {
+    margin-top: 3rem;
+}
+
+.foot-pannel2 ul a {
+    display: block;
+    font-size: .85rem;
+    margin-top: .56rem;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.foot-pannel3 {
+    background: #222f3df3;
+    color: white;
+    height: 4.37rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border-top: 0.5px solid white; */
+}
+
+.foot-pannel3 .foot-logo {
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    height: 3.1rem;
+    width: 6.25rem;
+}
+
+.foot-logo .logo {
+    /* background-image: url(../img/amazon_logo.png); */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* language Button sytle */
+#lang-btn{
+    border: 1px solid white;
+    padding: .2rem;
+    border-radius: .2rem;
+    font-size: 1rem;
+}
+
+#language {
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#language option {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    background: #222f3df3;
+}
+
+#language option:checked {
+    font-weight: bold;
+}
+
+/* Footer next box */
+.foot-pannel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 3.5rem;
+    font-size: 0.7rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.foot-pannel4 .foot-pages {
+    padding-top: .7rem;
+}
+
+.foot-pannel4 .foot-pages a {
+    text-decoration: none;
+    color: white;
+    margin-left: .93rem;
+}
+
+.foot-pannel4 .copyright {
+    padding-top: .2rem;
+}
+
+#signin{
+    margin-bottom: 1rem;
+}
+
+#signin a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
