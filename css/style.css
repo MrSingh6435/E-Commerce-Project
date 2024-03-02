@@ -252,6 +252,12 @@ i.nav-icons {
     background: white;
     padding: 1.25rem 0 .93rem;
     border-radius: 10px;
+    transition: .5s;
+}
+
+.box:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.699);
+    transition: .5s;
 }
 
 .boxContent {
@@ -263,6 +269,7 @@ i.nav-icons {
     height: 80%;
     background-size: cover;
     margin: 1rem 0;
+    border-radius: 5px;
 }
 
 .boxContent p {
