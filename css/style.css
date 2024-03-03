@@ -187,30 +187,52 @@ i.nav-icons {
     top: 0;
     left: 0;
     width: 21.875rem;
+    width: 25vw;
     height: 100vh;
     background: white;
     transform: translateX(-25.875rem); 
-    transition: transform 0.5s ease; 
-    z-index: 70;
+    transition: transform .5s ease; 
 }
 
 #sideBar.active {
     transform: translateX(0); 
 }
 
-span.bg{
+#sideBar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    height: 100vh;
+    z-index: -1;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    transform: translateX(75vw);  
+    /* transform: translateX(75vw) scaleX(0);  */
+}
+
+#sideBar.active::before {
+    background: rgba(0, 0, 0, 0.651);
+    transform: translateX(25vw); 
+    /* transform: translateX(25vw) scaleX(1);  */
+}
+
+
+
+/* span.bg{
     position: absolute;
     background: rgba(0, 0, 0, 0.63);
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
     top: 0;
-    transform: translateX(-100vw); 
+    left: 25vw;
+    transform: translateX(-75vw); 
     transition: transform 0.5s ease; 
 }
 
 #sideBar.active span.bg{
-    transform: translateX(21.875rem); 
-}
+    transform: translateX(0); 
+} */
 
 .signin{
     background: #0f1111;
