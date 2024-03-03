@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <title>E-commerse</title>
+    <style>
+    </style>
 </head>
 
 <body>
@@ -31,7 +33,7 @@
                 <select class="searchSelect">
                     <option>All</option>
                 </select>
-                <input type="text" placeholder="Search here..." class="searchInput">
+                <input type="text" placeholder="Search here..." id="searchBar" class="searchInput">
                 <div id="searchIcon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -78,7 +80,7 @@
     <header id="mobile">
         <nav id="navBar">
             <div id="pannelAll"> <!-- Menu button -->
-                <i id="menu" class="fa-solid fa-bars nav-icons"></i>
+                <i id="menu1" class="fa-solid fa-bars nav-icons"></i>
             </div>
 
             <div id="navLogo"> <!-- logo -->
@@ -97,7 +99,7 @@
         </nav>
 
         <div id="navSearch">
-            <input type="text" placeholder="Search here..." class="searchInput">
+            <input type="text" placeholder="Search here..." id="searchBar" class="searchInput">
             <div id="searchIcon">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -115,6 +117,20 @@
             <div id="pannelDeals" class="link">Deals of the day</div>
         </div>
     </header>
+
+    <!-- Side bar -->
+    <aside id="sideBar">
+        <span class="bg"></span>
+        <div class="signin">
+            <div class="inner">
+                <div class="icon"><i class="fa-solid fa-user"></i>
+                </div>Hello, Sign in
+                <div id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </aside>
 
     <!-- Home Section -->
     <Section id="home">
@@ -172,7 +188,7 @@
             </div>
             <div class="box">
                 <div class="boxContent">
-                    <h2>Arivials toys</h2>
+                    <h2>New Arivials & toys</h2>
                     <div class="boxImg" style="background-image: url('img/box7_image.jpg');"></div>
                     <p>See more..</p>
                 </div>
@@ -303,7 +319,9 @@
                 </select>
             </div>
 
-            <div id="signin"><h3>Already a Costumer? <a href="#">Sign in</a></h3></div>
+            <div id="signin">
+                <h3>Already a Costumer? <a href="#">Sign in</a></h3>
+            </div>
 
             <div class="foot-pages">
                 <a href="#">Conditions of Use & Sale</a>

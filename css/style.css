@@ -86,6 +86,7 @@ header#mobile{
     border: 3px solid transparent;
 }
 
+#navSearch.active ,
 #navSearch:hover {
     border: 3px solid orange;
 }
@@ -101,6 +102,8 @@ header#mobile{
     width: 100%;
     font-size: 1rem;
     border: none;
+    outline: none;
+    padding-left: .5rem;
 }
 
 #searchIcon {
@@ -178,9 +181,82 @@ i.nav-icons {
     font-weight: 700;
 }
 
+/* Side Bar */
+#sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 21.875rem;
+    height: 100vh;
+    background: white;
+    transform: translateX(-25.875rem); 
+    transition: transform 0.5s ease; 
+    z-index: 70;
+}
+
+#sideBar.active {
+    transform: translateX(0); 
+}
+
+span.bg{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.63);
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100vw); 
+    transition: transform 0.5s ease; 
+}
+
+#sideBar.active span.bg{
+    transform: translateX(21.875rem); 
+}
+
+.signin{
+    background: #0f1111;
+    height: 3.75rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.signin .inner{
+    width: 100%;
+    color: white;
+    margin: 13px 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    z-index: 5;
+}
+
+#close{
+    position: absolute;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    right: -30px;
+    z-index: 10;
+}
+
+.signin .icon{
+    color: #0f1111;
+    background: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .2rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Home Section */
 #home {
     background: url(../img/hero_image.jpg);
+    z-index: -1;
     background-size: cover;
     height: 18.7rem;
     display: flex;
