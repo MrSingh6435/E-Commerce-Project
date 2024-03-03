@@ -203,6 +203,7 @@ span.bg{
     background: rgba(0, 0, 0, 0.63);
     width: 100vw;
     height: 100vh;
+    top: 0;
     transform: translateX(-100vw); 
     transition: transform 0.5s ease; 
 }
@@ -237,6 +238,7 @@ span.bg{
     font-size: 1.4rem;
     font-weight: 700;
     right: -30px;
+    top: 1.5rem;
     z-index: 10;
 }
 

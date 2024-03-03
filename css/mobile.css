@@ -133,21 +133,22 @@
         width: 40%;
     }
 
-    .foot-pannel2 ul p{
+    .foot-pannel2 ul p {
         margin-top: 1rem;
     }
 
-    .foot-pannel2 ul p:hover{
+    .foot-pannel2 ul p:hover {
         color: #597ea5;
     }
-    .foot-pannel4{
+
+    .foot-pannel4 {
         height: 19rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    #lang-btn{
+    #lang-btn {
         border: none;
         margin: 0rem auto;
         margin-bottom: 1.5rem;
@@ -159,33 +160,33 @@
         padding-top: .7rem;
         font-size: .75rem;
     }
-    
+
     .foot-pannel4 .foot-pages a {
         text-decoration: none;
         color: white;
         margin-left: .9rem;
     }
-    
+
     .foot-pannel4 .copyright {
         font-size: .7rem;
     }
 
     /* Side bar Close */
-    #sideBar{
+    #sideBar {
         width: 20rem;
     }
 
-    span.bg{
+    span.bg {
         position: absolute;
         background: rgba(0, 0, 0, 0.63);
         width: 100vw;
         height: 100vh;
-        transform: translateX(-100vw); 
-        transition: transform 0.5s ease; 
+        transform: translateX(-100vw);
+        transition: transform 0.5s ease;
     }
-    
-    #sideBar.active span.bg{
-        transform: translateX(20rem); 
+
+    #sideBar.active span.bg {
+        transform: translateX(20rem);
     }
 }
 
