@@ -68,14 +68,7 @@
         font-size: 0.6rem;
     }
 
-    /* Side bar */
-    #sideBar::before {
-        transform: translateX(35vw);  
-    }
-
-    #sideBar.active::before {
-        transform: translateX(85vw); 
-    }
+    */
 
     /* home Sction */
     #home {
@@ -182,24 +175,10 @@
     /* Side bar Close */
     #sideBar {
         width: 20rem;
-    }
-
-    span.bg {
-        position: absolute;
-        background: rgba(0, 0, 0, 0.63);
-        width: 100vw;
-        height: 100vh;
-        transform: translateX(-100vw);
-        transition: transform 0.5s ease;
+        width: 90vw;
     }
 
     #sideBar.active span.bg {
-        transform: translateX(20rem);
+        transform: translateX(65vw);
     }
 }
-
-/* @media screen and (min-width: 601px) and (max-width: 900px) {
-    body {
-        font-size: 16px;
-    }
-}*/
